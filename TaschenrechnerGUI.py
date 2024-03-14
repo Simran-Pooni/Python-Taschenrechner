@@ -27,6 +27,8 @@ def clear_field():
 # mw - "main window"
 mw = tk.Tk()
 mw.geometry("300x425")
+mw.title("Taschenrechner")
+mw.configure(bg="#FFB6C1")
 
 textfield_result = tk.Text(mw, height=2, width=16, font=("Century", 24))
 textfield_result.grid(columnspan=5)
