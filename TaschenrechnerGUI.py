@@ -30,6 +30,12 @@ mw.geometry("300x425")
 mw.title("Taschenrechner")
 mw.configure(bg="#FFB6C1")
 
+# Hintergrundbild
+hintergrund = tk.PhotoImage(file="schleife.png")
+hintergrund_label = tk.Label(mw, image=hintergrund)
+hintergrund_label.place(x=0, y=0, relwidth=1, relheight=1)
+
+# Ergebnistextfeld
 textfield_result = tk.Text(mw, height=2, width=16, font=("Century", 24), bg="#FFC0CB", fg="black")
 textfield_result.grid(columnspan=5, pady=10)
 
