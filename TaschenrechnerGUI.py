@@ -26,7 +26,7 @@ def clear_field():
 
 # mw - "main window"
 mw = tk.Tk()
-mw.geometry("300x275")
+mw.geometry("300x425")
 
 textfield_result = tk.Text(mw, height=2, width=16, font=("Century", 24))
 textfield_result.grid(columnspan=5)
