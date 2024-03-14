@@ -30,27 +30,27 @@ mw.geometry("300x425")
 mw.title("Taschenrechner")
 mw.configure(bg="#FFB6C1")
 
-textfield_result = tk.Text(mw, height=2, width=16, font=("Century", 24))
-textfield_result.grid(columnspan=5)
+textfield_result = tk.Text(mw, height=2, width=16, font=("Century", 24), bg="#FFC0CB", fg="black")
+textfield_result.grid(columnspan=5, pady=10)
 
 # Numberpad:
-btn_1 = tk.Button(mw, text="1", command=lambda: add_to_calculation(1), width=5, font=("Century", 12))
+btn_1 = tk.Button(mw, text="1", command=lambda: add_to_calculation(1), width=5, font=("Century", 12), bg="#FF69B4", fg="white")
 btn_1.grid(row=2, column=1)
 
-btn_2 = tk.Button(mw, text="2", command=lambda: add_to_calculation(2), width=5, font=("Century", 12))
+btn_2 = tk.Button(mw, text="2", command=lambda: add_to_calculation(2), width=5, font=("Century", 12), bg="#FF69B4", fg="white")
 btn_2.grid(row=2, column=2)
 
-btn_3 = tk.Button(mw, text="3", command=lambda: add_to_calculation(3), width=5, font=("Century", 12))
+btn_3 = tk.Button(mw, text="3", command=lambda: add_to_calculation(3), width=5, font=("Century", 12), bg="#FF69B4", fg="white")
 btn_3.grid(row=2, column=3)
 
 # row 3
-btn_4 = tk.Button(mw, text="4", command=lambda: add_to_calculation(4), width=5, font=("Century", 12))
+btn_4 = tk.Button(mw, text="4", command=lambda: add_to_calculation(4), width=5, font=("Century", 12), bg="#FF69B4", fg="white")
 btn_4.grid(row=3, column=1)
 
-btn_5 = tk.Button(mw, text="5", command=lambda: add_to_calculation(5), width=5, font=("Century", 12))
+btn_5 = tk.Button(mw, text="5", command=lambda: add_to_calculation(5), width=5, font=("Century", 12), bg="#FF69B4", fg="white")
 btn_5.grid(row=3, column=2)
 
-btn_6 = tk.Button(mw, text="6", command=lambda: add_to_calculation(6), width=5, font=("Century", 12))
+btn_6 = tk.Button(mw, text="6", command=lambda: add_to_calculation(6), width=5, font=("Century", 12), bg="#FF69B4", fg="white")
 btn_6.grid(row=3, column=3)
 
 # row 4
