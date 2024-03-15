@@ -10,15 +10,12 @@ def add_to_calculation(zahl):
 
 def evaluate_calculation():
     global calculation
-    if calculation.strip():
-        try:
-            result = str(eval(calculation))
-            calculation = ""
-            textfield_result.delete(1.0, "end")
-        except:
-            clear_field()
-            textfield_result.insert(1.0, "Error")
-    else:
+    try:
+        result = str(eval(calculation))
+        calculation = ""
+        textfield_result.delete(1.0,"end")
+        textfield_result.insert(1.0, result)
+    except:
         clear_field()
         textfield_result.insert(1.0, "Error")
 
